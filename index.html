@@ -3,56 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lab Suite - Privacidad</title>
+  <title>Lab Suite - Tu Asistente de Productividad y Confort Visual</title>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<main class="legal-shell">
-  <header>
-    <h1>Lab Suite</h1>
-    <p>Politica de privacidad.</p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Lab Suite</h1>
+      <p>Optimiza tu flujo de trabajo diario con un modo oscuro adaptativo de alto contraste, herramientas de gestión eficiente y una experiencia limpia diseñada para tu comodidad.</p>
+    </header>
 
-  <section class="legal-card">
-    <h2>Resumen</h2>
-    <p>
-      Lab Suite recolecta únicamente información técnica mínima para mejorar la extensión,
-      como eventos de uso y feedback voluntario. No recolecta contraseñas ni contenido privado
-      de tus cuentas.
-    </p>
+    <div class="grid">
+      <!-- Funcionalidad 1 -->
+      <div class="card">
+        <div>
+          <h3><i class="fas fa-moon" style="color: var(--accent); margin-right: 8px;"></i>Modo Oscuro Inteligente</h3>
+          <p>Reduce el cansancio visual durante jornadas largas. Ajusta automáticamente fondos, textos y componentes de la plataforma con un diseño oscuro elegante y equilibrado.</p>
+        </div>
+        <span class="badge ready">Disponible</span>
+      </div>
 
-    <div class="legal-section">
-      <h2>Datos que podemos guardar</h2>
-      <ul>
-        <li>Preferencias de la extensión (modo oscuro y features activas).</li>
-        <li>Feedback voluntario (like/dislike y comentario opcional).</li>
-        <li>Datos técnicos básicos (versión de extensión y timestamp).</li>
-      </ul>
+      <!-- Funcionalidad 2 -->
+      <div class="card">
+        <div>
+          <h3><i class="fas fa-trash-alt" style="color: var(--accent); margin-right: 8px;"></i>Borrado Masivo Eficiente</h3>
+          <p>Ahorra tiempo seleccionando múltiples pruebas o registros a la vez. Procesa limpiezas por lotes de forma controlada y segura con confirmación previa.</p>
+        </div>
+        <span class="badge ready">Disponible</span>
+      </div>
+
+      <!-- Funcionalidad 3 -->
+      <div class="card">
+        <div>
+          <h3><i class="fas fa-sliders-h" style="color: var(--accent); margin-right: 8px;"></i>Control Inmediato</h3>
+          <p>Activa o desactiva cada herramienta a tu medida directamente desde el botón del navegador o el botón flotante en pantalla, sin recargar la página.</p>
+        </div>
+        <span class="badge ready">Disponible</span>
+      </div>
+
+      <!-- Funcionalidad 4 -->
+      <div class="card">
+        <div>
+          <h3><i class="fas fa-shield-alt" style="color: var(--accent); margin-right: 8px;"></i>Privacidad y Seguridad</h3>
+          <p>Tus preferencias se guardan de forma local en tu navegador. No rastreamos tus contraseñas ni tu información personal.</p>
+        </div>
+        <a class="bookmarklet-btn secondary" href="#soporte">Ver compromiso de privacidad</a>
+      </div>
     </div>
 
-    <div class="legal-section">
-      <h2>Uso de los datos</h2>
-      <ul>
-        <li>Mejorar estabilidad, usabilidad y rendimiento.</li>
-        <li>Priorizar fixes y roadmap de funcionalidades.</li>
-        <li>Medir adopción básica del producto.</li>
-      </ul>
+    <!-- Guía rápida de uso -->
+    <div class="instructions" id="guia-uso">
+      <strong>¿Cómo empezar a usar Lab Suite?</strong><br>
+      1. Haz clic en el ícono de rompecabezas en tu navegador y fija el pin de <strong>Lab Suite</strong>.<br>
+      2. Abre la plataforma y usa el interruptor flotante o el menú de la extensión para activar el modo oscuro.<br>
+      3. Si necesitas gestionar registros, activa <em>Borrado Masivo</em> en el menú para habilitar la selección múltiple en las tablas.
     </div>
 
-    <div class="legal-section">
-      <h2>Contacto</h2>
-      <p>
-        Si necesitas soporte o quieres solicitar eliminacion de feedback enviado,
-        contacta al responsable a través del mismo formulario de feedback.
-      </p>
-    </div>
+    <!-- Preguntas Frecuentes y Soporte -->
+    <section class="info-grid" aria-label="Información y ayuda">
+      <article class="info-card" id="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <details>
+          <summary>¿La extensión afecta el rendimiento de la página?</summary>
+          <p>No. Lab Suite está construida de forma ligera y modular. Solo ejecuta el código estrictamente necesario para aplicar estilos y herramientas en las páginas admitidas.</p>
+        </details>
+        <details>
+          <summary>¿Cómo activo el modo oscuro en una pestaña?</summary>
+          <p>Puedes pulsar el botón flotante circular de sol/luna en la esquina de la pantalla, o abrir el menú de la extensión desde la barra superior y marcar la casilla <em>Modo Oscuro</em>.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa si borro registros por error con Borrado Masivo?</summary>
+          <p>La extensión siempre te pedirá confirmación explícita indicando la cantidad exacta de registros antes de proceder, garantizando que nunca se elimine nada sin tu consentimiento.</p>
+        </details>
+        <details>
+          <summary>¿Cómo puedo sugerir mejoras o reportar un error?</summary>
+          <p>Abre el menú de la extensión, haz clic en <em>"Enviar comentarios o feedback"</em> y déjanos tu valoración o comentario. Revisamos cada sugerencia continuamente.</p>
+        </details>
+      </article>
 
-    <div class="stack mt-16">
-      <a class="bookmarklet-btn secondary" href="./index.html"><i class="fas fa-arrow-left"></i>Atrás</a>
-      <a class="bookmarklet-btn secondary" href="./terms.html">Ver términos</a>
-    </div>
-  </section>
-</main>
+      <article class="info-card" id="soporte">
+        <h2>Soporte y Transparencia</h2>
+        <p>Lab Suite se mantiene en constante evolución para mejorar tu productividad diaria.</p>
+        <p>Consulta nuestras políticas de uso responsable y protección de datos:</p>
+        <div class="stack" style="margin-top: 10px;">
+          <a class="bookmarklet-btn secondary" href="./privacy.html">Política de Privacidad</a>
+          <a class="bookmarklet-btn secondary" href="./terms.html">Términos del Servicio</a>
+        </div>
+      </article>
+    </section>
+  </div>
 </body>
 </html>
