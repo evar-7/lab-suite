@@ -1,0 +1,29 @@
+# Legacy project folders
+refencias/
+
+# Documentación secundaria
+*.md
+!/README.md
+!/docs/*.md
+SUMMARY.txt
+
+# Entorno local e IDE
+.agents/
+.gemini/
+.idea/
+
+.env
+/.env.production
+/.env.development
+backend/.env
+backend/.env.production
+backend/data/
+config.json
+.env.local
+.idea/
+__pycache__/
+*.pyc
+
+# Artefactos generados
+*.crx
+*.pem
