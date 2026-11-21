@@ -94,6 +94,7 @@ header p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   min-height: 44px;
   background: linear-gradient(135deg, var(--accent-light), var(--accent));
   color: #ffffff;
